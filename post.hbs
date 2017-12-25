@@ -19,7 +19,7 @@ into the {body} of the default.hbs template --}}
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+                    <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY年MM月DD日"}}</time>
                     {{#primary_tag}}
                         <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
                     {{/primary_tag}}
@@ -58,12 +58,12 @@ into the {body} of the default.hbs template --}}
                         {{#if bio}}
                             <p>{{bio}}</p>
                         {{else}}
-                            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                            <p>这个人很懒</p>
                         {{/if}}
                     </section>
                 </section>
                 <div class="post-full-footer-right">
-                    <a class="author-card-button" href="{{url}}">Read More</a>
+                    <a class="author-card-button" href="{{url}}">作者专栏</a>
                 </div>
 
                 {{/author}}
